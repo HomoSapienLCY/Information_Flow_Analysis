@@ -1,6 +1,6 @@
 tic
 
-connection_matrix = importdata('connection_matrix_0_2_cut');
+connection_matrix = importdata('connection_matrix');
 
 N = size(connection_matrix,1);
 A = sparse(zeros(N,N));
