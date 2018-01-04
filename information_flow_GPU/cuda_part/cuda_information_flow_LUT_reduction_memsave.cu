@@ -586,16 +586,16 @@ int main()
     	double d_2;
 
 	//loading the matrices and arrays
-	read_double_array("chrom_12_initial_matrix_diag.bin", A_diag, m_size);
-	read_matrix("chrom_12_initial_inverse_matrix.bin", A_inv, m_size);
+	read_double_array("chrom_1_initial_matrix_diag.bin", A_diag, m_size);
+	read_matrix("chrom_1_initial_inverse_matrix.bin", A_inv, m_size);
 	printf("Initial inverse matrix reading complete\n");
 
-	read_int_array("chrom_12_occupied_spacings.bin", spacing, m_size+1);
-	read_int_array("chrom_12_occupied_row_indices.bin", row_ind, element_num);
-	read_int_array("chrom_12_occupied_col_indices.bin", col_ind, element_num);
-	read_int_array("chrom_12_LUT.bin", LUT, LUT_size);
-	read_int_array("chrom_12_LUT_positions.bin", LUT_positions, number_of_rounds+1);
-	read_double_array("chrom_12_occupied_values.bin", conductance, element_num);
+	read_int_array("chrom_1_occupied_spacings.bin", spacing, m_size+1);
+	read_int_array("chrom_1_occupied_row_indices.bin", row_ind, element_num);
+	read_int_array("chrom_1_occupied_col_indices.bin", col_ind, element_num);
+	read_int_array("chrom_1_LUT.bin", LUT, LUT_size);
+	read_int_array("chrom_1_LUT_positions.bin", LUT_positions, number_of_rounds+1);
+	read_double_array("chrom_1_occupied_values.bin", conductance, element_num);
 	printf("Occupied matrices reading complete\n");
 	printf("\n");
 
