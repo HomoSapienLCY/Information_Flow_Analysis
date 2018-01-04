@@ -11,6 +11,7 @@ using namespace std;
 #include <cusparse.h>
 #include <iomanip>
 
+//fill in the number below according to the output from the matlab preprocessing script
 static const unsigned int m_size = 12865;
 static const unsigned int element_num = 686082;
 static const unsigned int LUT_size = 673217;
