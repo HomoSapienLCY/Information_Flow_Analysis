@@ -115,6 +115,6 @@ parfor i=1:N
     
 end
 
-save('information_flow_chromosome_19_0_2_cut_result', 'nodesI', '-ascii')
+save('information_flow_result', 'nodesI', '-ascii')
 
 toc
