@@ -17,10 +17,7 @@ connection_matrix = connection_matrix + 0.001 * anti_I;
 
 clear anti_I;
 
-% Step 1: fill in the matrix of resistors, A
-% Also, set up matrix R2 needed for Step 6, also sparse
-% it is used to solve for the branch (NOT node) currents (eg. between nodes
-% i and j), size M by N where N is number of nodes, M is number of branches
+%fill in the matrix of resistors, A
 for i=1:N
     A_diag(i) = - sum(connection_matrix(i,:));
 end;
