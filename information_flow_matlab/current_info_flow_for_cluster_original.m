@@ -1,3 +1,4 @@
+%this code is downloaded from the original paper website http://people.csail.mit.edu/patrycja/ with deletion of redundant code for speeding up and additional codes time the calculations 
 connectMatrix = importdata('connection_matrix');
 
 if ~exist('condOrRes','var')
