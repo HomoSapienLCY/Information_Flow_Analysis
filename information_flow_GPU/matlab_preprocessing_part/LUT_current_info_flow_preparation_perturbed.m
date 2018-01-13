@@ -115,6 +115,7 @@ end
 %LUT size
 LUT_size = length(LUT)
 
+%save files
 fileID = fopen('chrom_1_occupied_row_indices.bin','w');
 fwrite(fileID, nonzero_rows, 'int');
 fclose(fileID);
