@@ -1,5 +1,6 @@
 # Description:
 The matlab and CUDA implementation of a O(n^2m) information flow analysis algorithm (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000350)
+This project is a part of a project at http://wanglab.ucsd.edu/ , you are welcome to contact chl556@ucsd.edu if you have any questions.
 
 # Time Test:
 A network with N (number of nodes) = 3,447 and M (number of edges) = 92,026
