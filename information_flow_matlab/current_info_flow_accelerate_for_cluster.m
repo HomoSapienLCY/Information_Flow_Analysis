@@ -6,10 +6,7 @@ N = size(connection_matrix,1);
 A = sparse(zeros(N,N));
 
 nodesI = zeros(N,1);
-% Step 1: fill in the matrix of resistors, A
-% Also, set up matrix R2 needed for Step 6, also sparse
-% it is used to solve for the branch (NOT node) currents (eg. between nodes
-% i and j), size M by N where N is number of nodes, M is number of branches
+% fill in the matrix of resistors, A
 R2 = sparse(0,N);
 for i=1:N
     indxConnNodes = find(connection_matrix(i,:) ~= 0);
@@ -28,10 +25,6 @@ for i=1:N
     % append the piece to R2
     R2 = [R2 ;pieceToAppend];
 end;
-
-% matrix A and R2 only need to be set up once, done
-% also form R2T (transpose of R2, with 1s where nonzero entries are), used
-% in step 7
 
 R2T = sparse((R2 ~= 0)');
 
