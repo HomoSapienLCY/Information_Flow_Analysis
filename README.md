@@ -2,6 +2,11 @@
 The matlab and CUDA implementation of a O(n^2m) information flow analysis algorithm (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000350)
 This is one part of a project at http://wanglab.ucsd.edu/ , you are welcome to contact chl556@ucsd.edu if you have any questions.
 
+# Running Instructions
+The input should be named "connection_matrix" and arranged in an n*n matrix
+The matlab codes can be directly run on this file
+For the cuda code, you need to run the preprocessor first to generate the input for the cuda code and also the parameters needed for the cuda code. Then change the parameters in the top of the cuda code according to the outputs of the preprocessor. Then make using make.bash and run.
+
 # Time Test:
 A network with N (number of nodes) = 3,447 and M (number of edges) = 92,026
 
