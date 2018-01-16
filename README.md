@@ -1,6 +1,6 @@
 # Description:
 The matlab and CUDA implementation of a O(n^2m) information flow analysis algorithm (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000350)
-This is one part of a project at http://wanglab.ucsd.edu/ , you are welcome to contact chl556@ucsd.edu if you have any questions.
+This is one part of a project at http://wanglab.ucsd.edu/ , you are welcome to contact chl556@ucsd.edu if you have any questions or want a copy of algorithm derivation.
 
 # Running Instructions
 The input should be named "connection_matrix" and arranged in an n*n matrix
