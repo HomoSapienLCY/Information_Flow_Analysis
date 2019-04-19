@@ -1,5 +1,3 @@
-Current GPU code only tested on GTX580 with cuda 8.0
-
 # Description:
 The matlab and CUDA implementation of a O(mn^2) information flow analysis (the original algorithm is O(n^4)) algorithm (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000350).
 
